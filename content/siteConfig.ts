@@ -67,7 +67,7 @@ export const siteConfig: SiteConfig = {
     displayPhone: '+91 99561 11321',
     whatsapp: '+919956111321',
     displayWhatsapp: '+91 99561 11321',
-    email: 'contact@aadhunikpracharprasar.com [PLACEHOLDER]',
+    email: 'prasarchunav@gmail.com',
     officeAddress: {
       hi: 'दारुलशफ़ा, हजरतगंज, लखनऊ, उत्तर प्रदेश - 226001',
       en: 'Darulshafa, Hazratganj, Lucknow, Uttar Pradesh - 226001',
