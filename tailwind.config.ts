@@ -1,0 +1,105 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  darkMode: 'class',
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './content/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        paper: {
+          DEFAULT: '#FAF6ED',
+          light: '#FDFBF7',
+          warm: '#F7F1E4',
+          dark: '#EFE6D6',
+          border: '#DFD3C1',
+          line: '#D8CABA',
+        },
+        ink: {
+          DEFAULT: '#120F0C',
+          950: '#0E0B09',
+          900: '#120F0C',
+          800: '#26201B',
+          700: '#3D342C',
+          600: '#52463B',
+          500: '#736354',
+          400: '#948373',
+          300: '#BAAB9B',
+          200: '#DFD6CC',
+          100: '#EDE7E1',
+          50: '#FAF6F2',
+        },
+        navy: {
+          950: '#151210',
+          900: '#1D1916',
+          850: '#231F1B',
+          800: '#2C2723',
+          700: '#3A332E',
+          600: '#4D443D',
+        },
+        slate: {
+          700: '#3D342C',
+          600: '#52463B',
+          500: '#736354',
+          400: '#948373',
+          300: '#BAAB9B',
+          200: '#DFD6CC',
+          100: '#EDE7E1',
+          50: '#F7F3ED',
+        },
+        gold: {
+          800: '#734E17',
+          700: '#8E621E',
+          600: '#A8762A',
+          500: '#C28B38',
+          400: '#D5A14E',
+          300: '#E4BA6F',
+          200: '#F0D499',
+          100: '#FAEDCC',
+          50: '#FDFBF4',
+        },
+        ivory: {
+          100: '#F2ECDF',
+          50: '#FAF6ED',
+        },
+        success: '#1F8A5B',
+        danger: '#C2410C',
+      },
+      fontFamily: {
+        serif: ['"Noto Serif Devanagari"', 'Georgia', 'Cambria', '"Times New Roman"', 'serif'],
+        devanagari: ['"Noto Sans Devanagari"', '"Nirmala UI"', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['"Noto Sans Devanagari"', '"Nirmala UI"', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        heading: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', '"Nirmala UI"', 'sans-serif'],
+      },
+      borderRadius: {
+        'card': '12px',
+        'card-lg': '16px',
+        'card-sm': '8px',
+      },
+      boxShadow: {
+        'paper-sm': '0 1px 3px rgba(60, 45, 30, 0.05)',
+        'paper-md': '0 4px 16px -2px rgba(60, 45, 30, 0.07)',
+        'paper-lg': '0 12px 28px -4px rgba(60, 45, 30, 0.09)',
+        'navy-sm': '0 1px 3px rgba(60, 45, 30, 0.05)',
+        'navy-md': '0 4px 16px -2px rgba(60, 45, 30, 0.07)',
+        'navy-lg': '0 12px 28px -4px rgba(60, 45, 30, 0.09)',
+        'navy-glow': '0 0 25px rgba(194, 139, 56, 0.12)',
+        'gold-glow': '0 0 20px rgba(194, 139, 56, 0.2)',
+      },
+      backgroundImage: {
+        'notepad-lines': 'repeating-linear-gradient(to bottom, transparent, transparent 23px, rgba(175, 140, 105, 0.13) 23px, rgba(175, 140, 105, 0.13) 24px)',
+        'notepad-grid': 'linear-gradient(to right, rgba(175, 140, 105, 0.10) 1px, transparent 1px), linear-gradient(to bottom, rgba(175, 140, 105, 0.13) 1px, transparent 1px)',
+        'jaali-pattern': 'radial-gradient(circle at center, rgba(168, 118, 42, 0.06) 1px, transparent 1px)',
+        'gold-gradient': 'linear-gradient(135deg, #B87D32 0%, #D5A14E 100%)',
+        'navy-hero': 'linear-gradient(180deg, #FAF6ED 0%, #F5EDE0 100%)',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;

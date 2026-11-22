@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json.schemastore.org/design-tokens.json",
+  "name": "Aadhunik Prachar Prasar Design Tokens",
+  "version": "1.0.0",
+  "theme": "Premium Indian Media House",
+  "mood": "Cinematic, Authoritative, Modern, Warm",
+  "color": {
+    "navy": {
+      "950": { "value": "#060B1A", "type": "color", "description": "Deepest hero, footer background" },
+      "900": { "value": "#0B1530", "type": "color", "description": "Primary corporate navy base (~55% visual ratio)" },
+      "800": { "value": "#0E1935", "type": "color", "description": "Dark card surface" },
+      "700": { "value": "#101D3A", "type": "color", "description": "Secondary navy cards and panels" }
+    },
+    "slate": {
+      "600": { "value": "#28364F", "type": "color", "description": "Hairline card borders and dividers" },
+      "400": { "value": "#64748B", "type": "color", "description": "Muted metadata labels" },
+      "300": { "value": "#94A3B8", "type": "color", "description": "Subheadline text in dark sections" }
+    },
+    "gold": {
+      "500": { "value": "#C69A45", "type": "color", "description": "Primary gold accent (~10% visual ratio, CTAs, dividers)" },
+      "300": { "value": "#E3C57E", "type": "color", "description": "Light gold shimmer, active states" }
+    },
+    "ivory": {
+      "100": { "value": "#ECE8DF", "type": "color", "description": "Secondary light card surface" },
+      "50": { "value": "#F5F3ED", "type": "color", "description": "Primary warm editorial light section background (~35% visual ratio)" }
+    },
+    "ink": {
+      "primary": { "value": "#0F172A", "type": "color", "description": "Main text on light ivory backgrounds" }
+    },
+    "status": {
+      "success": { "value": "#1F8A5B", "type": "color", "description": "Verified badge indicator" },
+      "danger": { "value": "#C2410C", "type": "color", "description": "Critical alerts and non-compliance warnings" },
+      "whatsapp": { "value": "#25D366", "type": "color", "description": "Official WhatsApp brand green" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "devanagari": { "value": "Noto Sans Devanagari, sans-serif" },
+      "heading": { "value": "Plus Jakarta Sans, sans-serif" },
+      "sans": { "value": "Inter, sans-serif" }
+    },
+    "lineHeight": {
+      "devanagariBody": { "value": "1.65", "description": "Ensures full vowel matra clearance" },
+      "headings": { "value": "1.25" }
+    },
+    "letterSpacing": {
+      "devanagari": { "value": "0px", "description": "Never positive track Devanagari to preserve continuous shirorekha" }
+    }
+  },
+  "borderRadius": {
+    "card": { "value": "14px" },
+    "cardLg": { "value": "16px" },
+    "cardSm": { "value": "12px" },
+    "pill": { "value": "9999px" }
+  },
+  "boxShadow": {
+    "navySm": { "value": "0 2px 8px -2px rgba(11, 21, 48, 0.08)" },
+    "navyMd": { "value": "0 8px 24px -4px rgba(11, 21, 48, 0.12)" },
+    "navyLg": { "value": "0 16px 32px -8px rgba(11, 21, 48, 0.16)" },
+    "goldGlow": { "value": "0 0 25px rgba(198, 154, 69, 0.25)" }
+  }
+}

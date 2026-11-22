@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aadhunikpracharprasar.com/hi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aadhunikpracharprasar.com/en" />
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aadhunikpracharprasar.com/hi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aadhunikpracharprasar.com/en" />
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services Index -->
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Core Services Details -->
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/digital-ad-marketing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/digital-ad-marketing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/creative-design-branding</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/creative-design-branding</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/video-production-editing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/video-production-editing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/social-media-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/social-media-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/print-outdoor-advertising</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/print-outdoor-advertising</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/photography-event-coverage</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/photography-event-coverage</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/services/pr-media-coordination</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/services/pr-media-coordination</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Portfolio & Work -->
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/work</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/work</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- About, Compliance, Insights, Contact -->
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/compliance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/compliance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/insights</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/insights</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/hi/styleguide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadhunikpracharprasar.com/en/styleguide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
