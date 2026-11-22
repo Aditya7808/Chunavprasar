@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Play, RotateCcw, Video as VideoIcon, Volume2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -13,6 +13,7 @@ interface VideoFacadeProps {
   className?: string;
   badge?: string;
   autoPlayPreview?: boolean;
+  poster?: string;
 }
 
 export function VideoFacade({
@@ -24,9 +25,21 @@ export function VideoFacade({
   className,
   badge = 'Brand Showreel 4K',
   autoPlayPreview = true,
+  poster = '/images/projects/warroom.jpg',
 }: VideoFacadeProps) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isAmbientReady, setIsAmbientReady] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Defer ambient video loading to avoid blocking initial critical page hydration
+  useEffect(() => {
+    if (videoSrc && autoPlayPreview) {
+      const timer = setTimeout(() => {
+        setIsAmbientReady(true);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [videoSrc, autoPlayPreview]);
 
   const aspectClass = {
     '16/9': 'aspect-video',
@@ -68,6 +81,7 @@ export function VideoFacade({
               controls
               autoPlay
               playsInline
+              preload="auto"
               className="w-full h-full object-cover"
               onEnded={() => setIsPlaying(false)}
             >
@@ -95,21 +109,34 @@ export function VideoFacade({
           </div>
         )
       ) : (
-        /* Facade view before click (ambient looping preview if videoSrc available) */
+        /* Facade view before click (lightweight background image + deferred ambient preview) */
         <button
           type="button"
           onClick={handleStartPlay}
           className="w-full h-full relative flex flex-col items-center justify-center text-center p-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-gold-500 group overflow-hidden"
           aria-label={`Play video: ${title}`}
         >
-          {/* Ambient Video Background */}
-          {videoSrc && autoPlayPreview ? (
+          {/* Static high-res poster image loads instantly with 0ms delay */}
+          {poster && (
+            <img
+              src={poster}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-full h-full object-cover opacity-60 scale-105 group-hover:scale-100 transition-all duration-700 ease-out pointer-events-none"
+              loading="eager"
+              decoding="async"
+            />
+          )}
+
+          {/* Ambient Video Background loads only after page hydration to avoid lag */}
+          {videoSrc && autoPlayPreview && isAmbientReady ? (
             <video
               src={videoSrc}
               muted
               autoPlay
               loop
               playsInline
+              preload="metadata"
               className="absolute inset-0 w-full h-full object-cover opacity-60 scale-105 group-hover:scale-100 transition-all duration-700 ease-out pointer-events-none"
             />
           ) : null}
