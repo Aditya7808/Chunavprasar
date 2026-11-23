@@ -43,15 +43,18 @@ export function Header({ locale }: HeaderProps) {
     { href: `/${locale}`, label: t.home },
     { href: `/${locale}/services`, label: t.services },
     { href: `/${locale}/work`, label: t.work },
+    { href: `/${locale}#gallery`, label: locale === 'hi' ? 'गैलरी' : 'Gallery' },
     { href: `/${locale}/about`, label: t.about },
     { href: `/${locale}/compliance`, label: t.compliance },
-    { href: `/${locale}/insights`, label: t.insights },
     { href: `/${locale}/contact`, label: t.contact },
   ];
 
   const isActive = (href: string) => {
     if (href === `/${locale}`) {
       return pathname === href;
+    }
+    if (href.includes('#')) {
+      return false;
     }
     return pathname?.startsWith(href);
   };
