@@ -76,6 +76,11 @@ export function Footer({ locale }: FooterProps) {
                 </Link>
               </li>
               <li>
+                <Link href={`/${locale}#gallery`} className="hover:text-[#F3C97E] transition-colors">
+                  {locale === 'hi' ? 'अभियान गैलरी' : 'Campaign Gallery'}
+                </Link>
+              </li>
+              <li>
                 <Link href={`/${locale}/compliance`} className="hover:text-[#F3C97E] transition-colors">
                   {translations[locale].nav.compliance}
                 </Link>

@@ -6,6 +6,7 @@ import { AboutSnapshot } from '@/components/home/AboutSnapshot';
 import { ServicesGrid } from '@/components/home/ServicesGrid';
 import { DigitalAdSpotlight } from '@/components/home/DigitalAdSpotlight';
 import { CapabilitiesGrid } from '@/components/home/CapabilitiesGrid';
+import { GallerySection } from '@/components/home/GallerySection';
 import { ProcessSteps } from '@/components/home/ProcessSteps';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { ComplianceTeaser } from '@/components/home/ComplianceTeaser';
@@ -40,6 +41,9 @@ export default function HomePage({
 
       {/* 6. Capabilities Grid (4 technical pillars) */}
       <CapabilitiesGrid locale={locale} />
+
+      {/* 7. Gallery Section (On-ground, media, and campaign photos) */}
+      <GallerySection locale={locale} />
 
       {/* 8. Process (5 steps horizontal on desktop, vertical on mobile) */}
       <ProcessSteps locale={locale} />
