@@ -10,7 +10,6 @@ import { GallerySection } from '@/components/home/GallerySection';
 import { ProcessSteps } from '@/components/home/ProcessSteps';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { ComplianceTeaser } from '@/components/home/ComplianceTeaser';
-import { InsightsSection } from '@/components/home/InsightsSection';
 import { FAQAccordion } from '@/components/home/FAQAccordion';
 import { CTABanner } from '@/components/home/CTABanner';
 import { EnquirySection } from '@/components/home/EnquirySection';
@@ -54,12 +53,7 @@ export default function HomePage({
       {/* 10. Compliance Teaser */}
       <ComplianceTeaser locale={locale} />
 
-      {/* 11. Collaborations / Testimonials: hidden per prompt when unverified */}
-
-      {/* 12. Insights (3 latest articles) */}
-      <InsightsSection locale={locale} />
-
-      {/* 13. FAQ (8 questions accordion) */}
+      {/* 11. FAQ (8 questions accordion) */}
       <FAQAccordion locale={locale} />
 
       {/* 14. Final CTA Banner + Enquiry Form + Office details + Map embed */}
