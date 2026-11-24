@@ -34,8 +34,8 @@ export function LanguageToggle({ currentLocale, className, variant = 'header' }:
     <Link
       href={targetPath}
       className={cn(
-        'inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 border',
-        'border-paper-border hover:border-gold-500 bg-white/80 text-ink-700 hover:text-gold-700 hover:bg-paper-warm shadow-paper-sm',
+        'inline-flex items-center justify-center gap-1.5 h-9 px-3 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 transition-all duration-200 border',
+        'border-paper-border hover:border-gold-500 bg-white/90 text-ink-700 hover:text-gold-700 hover:bg-paper-warm shadow-2xs',
         className
       )}
       title={currentLocale === 'hi' ? 'Switch to English' : 'हिंदी में बदलें'}

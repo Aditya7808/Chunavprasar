@@ -81,7 +81,7 @@ export function Header({ locale }: HeaderProps) {
             </Link>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="मुख्य नेविगेशन">
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5" aria-label="मुख्य नेविगेशन">
               {navLinks.map((link) => {
                 const active = isActive(link.href);
                 return (
@@ -89,31 +89,32 @@ export function Header({ locale }: HeaderProps) {
                     key={link.href}
                     href={link.href}
                     className={cn(
-                      'px-3 py-1.5 rounded-md text-sm font-devanagari transition-all duration-150 relative group',
+                      'h-9 px-2.5 xl:px-3 rounded-lg text-xs xl:text-sm inline-flex items-center justify-center whitespace-nowrap shrink-0 transition-all duration-150',
+                      locale === 'hi' ? 'font-devanagari' : 'font-sans font-medium',
                       active
-                        ? 'text-gold-700 font-bold bg-[#F0E8DC]'
+                        ? 'text-gold-900 font-bold bg-[#EFE6D6] border border-[#DFD3C1] shadow-2xs'
                         : 'text-ink-700 hover:text-ink-950 hover:bg-[#F3ECE0]/80 font-medium'
                     )}
                   >
-                    {link.label}
-                    {active && (
-                      <span className="absolute bottom-0 left-3 right-3 h-[2px] bg-gold-600 rounded-full" />
-                    )}
+                    <span>{link.label}</span>
                   </Link>
                 );
               })}
             </nav>
 
             {/* Right Controls: Language Toggle + CTA Button */}
-            <div className="hidden sm:flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-2.5">
               <LanguageToggle currentLocale={locale} />
               
               <Link
                 href={`/${locale}/contact#enquiry`}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-gold-600 hover:bg-gold-700 text-white font-bold text-xs sm:text-sm font-devanagari shadow-paper-sm active:scale-[0.98] transition-all"
+                className={cn(
+                  'inline-flex items-center justify-center gap-1.5 h-9 px-3.5 xl:px-4 rounded-lg bg-gold-600 hover:bg-gold-700 text-white font-bold text-xs sm:text-sm shadow-paper-sm active:scale-[0.98] transition-all whitespace-nowrap shrink-0',
+                  locale === 'hi' ? 'font-devanagari' : 'font-sans'
+                )}
               >
                 <span>{t.discussProject}</span>
-                <ArrowUpRight className="w-4 h-4 text-white" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-white" />
               </Link>
             </div>
 

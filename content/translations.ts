@@ -5,9 +5,9 @@ export const translations = {
     nav: {
       home: 'होम',
       services: 'सेवाएं',
-      work: 'हमारा काम',
+      work: 'कार्य',
       about: 'परिचय',
-      compliance: 'मानक व अनुपालन',
+      compliance: 'अनुपालन',
       insights: 'लेख व विचार',
       contact: 'संपर्क',
       discussProject: 'प्रोजेक्ट पर चर्चा करें',
@@ -291,12 +291,12 @@ export const translations = {
     nav: {
       home: 'Home',
       services: 'Services',
-      work: 'Our Work',
+      work: 'Work',
       about: 'About',
       compliance: 'Compliance',
       insights: 'Insights',
       contact: 'Contact',
-      discussProject: 'Discuss a Project',
+      discussProject: 'Discuss Project',
     },
     hero: {
       eyebrow: 'Political Communication · Creative Media · Digital Advertising · Lucknow',
