@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5EFE6"/>
+    </radialGradient>
+  </defs>
+  <!-- Circle container with gold border -->
+  <circle cx="64" cy="64" r="62" fill="url(#bg)" stroke="#B87D32" stroke-width="3"/>
+  <circle cx="64" cy="64" r="58" fill="none" stroke="#DFD3C1" stroke-width="1.5"/>
+
+  <!-- Official Brand Symbol Centered -->
+  <g transform="translate(14, 14)">
+    <!-- Deep Navy "A" -->
+    <path d="M42 12L14 84H28L36.5 61H46L49 53H39.5L42 43L42 12Z" fill="#0F2459"/>
+    <path d="M42 12L42 36L48 48L64 84H50L44 69H42L40 74H25L42 12Z" fill="#0F2459"/>
+    <path d="M48 66L56 84H71L54 50L48 66Z" fill="#0F2459"/>
+
+    <!-- Vibrant Lime Green Dynamic Swoop Crossbar -->
+    <path d="M24 62C32 62 40 56 48 45C51 41 53 36 55 31C52 38 45 49 32 54L24 62Z" fill="#8DC63F"/>
+    <path d="M24 61C33 61 41.5 54.5 49 43C42 51 33 54.5 24 55V61Z" fill="#7CB342"/>
+
+    <!-- Radiating Broadcast Waves (Lime Green & Sky Cyan) -->
+    <path d="M55 32C60 33 64 37 66 42C67.5 45.5 68 49 68 52" stroke="#8DC63F" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M62 23C70 24 76 29 80 37C82.5 42 83.5 47 84 52" stroke="#00A3E0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M69 14C80 16 88 23 93 33C96.5 40 98 47 98.5 52" stroke="#00A3E0" stroke-width="6.5" stroke-linecap="round"/>
+  </g>
+</svg>

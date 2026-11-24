@@ -70,6 +70,16 @@ export async function generateMetadata({
       index: true,
       follow: true,
     },
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+        { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+      ],
+      apple: [
+        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+    },
   };
 }
 
@@ -95,6 +105,12 @@ export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
   return (
     <html lang={locale} className="scroll-smooth">
       <head>
+        {/* Favicons & Brand Icon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/icon.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+
         {/* Preconnect to Google Fonts for high-definition Hindi Devanagari typography */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
