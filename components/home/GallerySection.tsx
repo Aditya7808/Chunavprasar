@@ -133,7 +133,7 @@ export function GallerySection({ locale }: GallerySectionProps) {
                   alt={item.alt[locale]}
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
                 />
 
                 {/* Top Badge */}
