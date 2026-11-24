@@ -130,100 +130,89 @@ export default function AboutPage({
           </div>
 
           <div className="lg:col-span-5">
-            <ImagePlaceholder
-              aspectRatio="4/5"
-              label="आधुनिक प्रचार प्रसार - लखनऊ स्टूडियो"
-              category="Lucknow Media Secretariat"
-              altGuidance="आधुनिक प्रचार प्रसार का मुख्य स्टूडियो व संपादन कक्ष"
-              className="shadow-navy-md"
-            />
+            <div className="relative rounded-card-lg overflow-hidden border border-[#DFD3C1] ring-2 ring-gold-500/25 shadow-paper-lg bg-paper-warm group">
+              <div className="aspect-[4/5] w-full overflow-hidden bg-[#181310]">
+                <img
+                  src="/images/director.jpg"
+                  alt={locale === 'hi' ? 'विनय कुमार - संस्थापक एवं प्रबंध निदेशक' : 'Vinay Kumar - Founder & Managing Director'}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              {/* Badge Overlay */}
+              <div className="absolute top-3.5 left-3.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-devanagari font-bold bg-[#1A1410]/85 text-gold-200 border border-gold-500/40 backdrop-blur-md shadow-sm">
+                  <ShieldCheck className="w-3.5 h-3.5 text-gold-400" />
+                  <span>{locale === 'hi' ? 'मुख्य निदेशक' : 'Managing Director'}</span>
+                </span>
+              </div>
+              {/* Name & Title Card */}
+              <div className="p-4 bg-white border-t border-[#DFD3C1] text-center">
+                <h3 className="text-lg font-bold text-ink font-devanagari">
+                  {locale === 'hi' ? 'विनय कुमार' : 'Vinay Kumar'}
+                </h3>
+                <p className="text-xs text-gold-800 font-devanagari font-semibold mt-0.5">
+                  {locale === 'hi' ? 'संस्थापक एवं प्रबंध निदेशक' : 'Founder & Managing Director'}
+                </p>
+                <p className="text-[11px] text-ink-500 font-sans mt-0.5">
+                  {locale === 'hi' ? 'आधुनिक प्रचार प्रसार · लखनऊ' : 'Aadhunik Prachar Prasar · Lucknow'}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Main Director & Founding Leadership Section */}
-        <div className="mb-20 p-8 sm:p-12 rounded-card-xl bg-white border border-[#DFD3C1] ring-1 ring-gold-400/30 shadow-paper-lg">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Director Portrait with high-craft styling */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative max-w-sm w-full rounded-card-lg overflow-hidden border border-[#DFD3C1] ring-2 ring-gold-500/25 shadow-paper-md bg-paper-warm group">
-                <div className="aspect-[3/4] w-full overflow-hidden bg-[#181310]">
-                  <img
-                    src="/images/director.jpg"
-                    alt={locale === 'hi' ? 'संस्थापक एवं प्रबंध निदेशक - आधुनिक प्रचार प्रसार' : 'Founder & Managing Director - Aadhunik Prachar Prasar'}
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                {/* Badge Overlay */}
-                <div className="absolute top-3.5 left-3.5">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-devanagari font-bold bg-[#1A1410]/85 text-gold-200 border border-gold-500/40 backdrop-blur-md shadow-sm">
-                    <ShieldCheck className="w-3.5 h-3.5 text-gold-400" />
-                    <span>{locale === 'hi' ? 'मुख्य निदेशक' : 'Managing Director'}</span>
-                  </span>
-                </div>
-                {/* Bottom name tag on card */}
-                <div className="p-4 bg-white border-t border-[#DFD3C1] text-center">
-                  <h4 className="text-base font-bold text-ink font-devanagari">
-                    {locale === 'hi' ? 'संस्थापक एवं प्रबंध निदेशक' : 'Founder & Managing Director'}
-                  </h4>
-                  <p className="text-xs text-gold-800 font-devanagari font-semibold mt-0.5">
-                    {locale === 'hi' ? 'आधुनिक प्रचार प्रसार · लखनऊ' : 'Aadhunik Prachar Prasar · Lucknow'}
-                  </p>
-                </div>
-              </div>
+        {/* Director's Perspective & Vision Statement */}
+        <div className="mb-20 p-8 sm:p-10 rounded-card-xl bg-white border border-[#DFD3C1] ring-1 ring-gold-400/30 shadow-paper-lg">
+          <div className="space-y-5">
+            <div className="inline-flex items-center gap-2 text-gold-700 text-xs font-sans uppercase font-bold tracking-wider bg-gold-50/80 px-3 py-1 rounded-full border border-gold-200">
+              <Sparkles className="w-3.5 h-3.5 text-gold-700" />
+              <span>{locale === 'hi' ? 'संस्थापक का संदेश' : "Founder's Vision"}</span>
             </div>
 
-            {/* Director Editorial Message */}
-            <div className="lg:col-span-7 space-y-5">
-              <div className="inline-flex items-center gap-2 text-gold-700 text-xs font-sans uppercase font-bold tracking-wider bg-gold-50/80 px-3 py-1 rounded-full border border-gold-200">
-                <Sparkles className="w-3.5 h-3.5 text-gold-700" />
-                <span>{locale === 'hi' ? 'संस्थापक एवं मुख्य निदेशक' : "Founder & Managing Director"}</span>
-              </div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold font-editorial text-ink tracking-tight leading-snug">
+              {locale === 'hi'
+                ? '“लोकतांत्रिक संवाद में गरिमा, धरातलीय समझ और आधुनिक तकनीक का संगम”'
+                : '“Fusing Institutional Dignity, Vernacular Reality & Modern Tech in Public Discourse”'}
+            </h3>
 
-              <h3 className="text-2xl sm:text-3xl font-extrabold font-editorial text-ink tracking-tight leading-snug">
+            <div className="space-y-4 text-sm sm:text-base text-ink-700 font-devanagari leading-[1.85]">
+              <p>
                 {locale === 'hi'
-                  ? '“लोकतांत्रिक संवाद में गरिमा, धरातलीय समझ और आधुनिक तकनीक का संगम”'
-                  : '“Fusing Institutional Dignity, Vernacular Reality & Modern Tech in Public Discourse”'}
-              </h3>
+                  ? 'सार्वजनिक जीवन और राजनीतिक अभियानों में संचार केवल बैनर या होर्डिंग टांगने तक सीमित नहीं है। यह जनता के प्रति उत्तरदायित्व, नेतृत्व की दृष्टि और नीतियों को विश्वासपात्र तरीके से हर नागरिक के दिल तक पहुंचाने का माध्यम है।'
+                  : 'Public and political communication is far more than erecting hoardings or blasting slogans. It is the sacred bridge of trust between citizens and representative leadership, translating complex policy into resonance and verifiable impact.'}
+              </p>
+              <p>
+                {locale === 'hi'
+                  ? 'उत्तर प्रदेश के गांव-गांव, कस्बों और विधानसभा क्षेत्रों में हमने यह अनुभव किया है कि जब तथ्य, सुरुचिपूर्ण भाषा और आधुनिक डिजिटल रणनीति एक साथ मिलते हैं, तो अभियान अजेय बन जाते हैं। आधुनिक प्रचार प्रसार इसी ध्येय के साथ हर जन-प्रतिनिधि के साथ कंधे से कंधा मिलाकर खड़ा है।'
+                  : 'Working across constituencies in Uttar Pradesh has demonstrated that when factual rigor, refined vernacular dignity, and algorithmic digital distribution converge, public initiatives become undeniable movements of trust.'}
+              </p>
+            </div>
 
-              <div className="space-y-4 text-sm sm:text-base text-ink-700 font-devanagari leading-[1.85]">
-                <p>
-                  {locale === 'hi'
-                    ? 'सार्वजनिक जीवन और राजनीतिक अभियानों में संचार केवल बैनर या होर्डिंग टांगने तक सीमित नहीं है। यह जनता के प्रति उत्तरदायित्व, नेतृत्व की दृष्टि और नीतियों को विश्वासपात्र तरीके से हर नागरिक के दिल तक पहुंचाने का माध्यम है।'
-                    : 'Public and political communication is far more than erecting hoardings or blasting slogans. It is the sacred bridge of trust between citizens and representative leadership, translating complex policy into resonance and verifiable impact.'}
-                </p>
-                <p>
-                  {locale === 'hi'
-                    ? 'उत्तर प्रदेश के गांव-गांव, कस्बों और विधानसभा क्षेत्रों में हमने यह अनुभव किया है कि जब तथ्य, सुरुचिपूर्ण भाषा और आधुनिक डिजिटल रणनीति एक साथ मिलते हैं, तो अभियान अजेय बन जाते हैं। आधुनिक प्रचार प्रसार इसी ध्येय के साथ हर जन-प्रतिनिधि के साथ कंधे से कंधा मिलाकर खड़ा है।'
-                    : 'Working across constituencies in Uttar Pradesh has demonstrated that when factual rigor, refined vernacular dignity, and algorithmic digital distribution converge, public initiatives become undeniable movements of trust.'}
-                </p>
+            {/* Signature & Pillars */}
+            <div className="pt-5 border-t border-[#DFD3C1]/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <strong className="text-base font-bold text-ink font-devanagari block">
+                  {locale === 'hi' ? 'विनय कुमार' : 'Vinay Kumar'}
+                </strong>
+                <span className="text-xs text-gold-800 font-devanagari font-semibold">
+                  {locale === 'hi' ? 'संस्थापक एवं प्रबंध निदेशक' : 'Founder & Managing Director'}
+                </span>
+                <span className="text-[11px] text-ink-500 font-sans block">
+                  {locale === 'hi' ? 'आधुनिक प्रचार प्रसार, लखनऊ' : 'Aadhunik Prachar Prasar, Lucknow'}
+                </span>
               </div>
 
               {/* Core Pillars Pills */}
-              <div className="pt-4 border-t border-[#DFD3C1]/80 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div className="p-3 rounded-card bg-[#FAF6ED] border border-[#DFD3C1] text-center">
-                  <span className="text-xs font-bold text-ink font-devanagari block">
-                    {locale === 'hi' ? 'रणनीतिक नेतृत्व' : 'Strategic Vision'}
-                  </span>
-                  <span className="text-[11px] text-ink-500 font-sans mt-0.5 block">
-                    100% Policy Aligned
-                  </span>
-                </div>
-                <div className="p-3 rounded-card bg-[#FAF6ED] border border-[#DFD3C1] text-center">
-                  <span className="text-xs font-bold text-ink font-devanagari block">
-                    {locale === 'hi' ? 'धरातलीय पकड़' : 'Ground Reality'}
-                  </span>
-                  <span className="text-[11px] text-ink-500 font-sans mt-0.5 block">
-                    Uttar Pradesh Focus
-                  </span>
-                </div>
-                <div className="p-3 rounded-card bg-[#FAF6ED] border border-[#DFD3C1] text-center">
-                  <span className="text-xs font-bold text-ink font-devanagari block">
-                    {locale === 'hi' ? 'सख्त गोपनीयता' : 'Total Confidentiality'}
-                  </span>
-                  <span className="text-[11px] text-ink-500 font-sans mt-0.5 block">
-                    Binding NDA Protocol
-                  </span>
-                </div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="px-3 py-1.5 rounded-full bg-[#FAF6ED] border border-[#DFD3C1] text-xs font-devanagari font-semibold text-ink-700">
+                  {locale === 'hi' ? 'रणनीतिक नेतृत्व' : 'Strategic Vision'}
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-[#FAF6ED] border border-[#DFD3C1] text-xs font-devanagari font-semibold text-ink-700">
+                  {locale === 'hi' ? 'धरातलीय पकड़' : 'Ground Reality'}
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-[#FAF6ED] border border-[#DFD3C1] text-xs font-devanagari font-semibold text-ink-700">
+                  {locale === 'hi' ? 'सख्त गोपनीयता (NDA)' : 'Strict NDA Protocol'}
+                </span>
               </div>
             </div>
           </div>
